@@ -48,15 +48,14 @@ The project also fits the class requirements well because it has:
 ### 3. Inputs and outputs
 
 #### Inputs
-- input image pixel data
-- image width
-- image height
-- start signal / control register values
-- input base address and output base address if using shared memory
+- grayscale image pixel stream (8-bit per pixel)
+- image width and height
+- start signal and configuration parameters (via control registers)
+- (optional) Input/output base addresses when integrated with a shared memory system
 
 #### Outputs
-- compressed bitstream or packed encoded words
-- done status
+- compressed output bitstream (or packed encoded words)
+- done status signal indicating completion of the compression process
 
 ### 4. Mathematical operations performed in the IP
 
