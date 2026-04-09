@@ -159,8 +159,6 @@ The initial design will use:
 - **AXI4-Lite** for control and status registers
 - **AXI4 memory-mapped (`m_axi`)** for reading input image data from shared memory and writing compressed output back to shared memory
 
-This choice keeps PS/IP interaction simple and matches a common Vitis HLS integration model.
-
 A possible later extension is to replace or supplement memory-mapped pixel transfer with **AXI4-Stream** for a more purely streaming pipeline.
 
 ### 3. Major hardware modules
