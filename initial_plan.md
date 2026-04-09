@@ -22,14 +22,15 @@
 This project designs a custom FPGA IP block for **lossless grayscale image compression based on the regular-mode path of JPEG-LS**.
 
 The IP takes an input grayscale image and produces a compressed output bitstream.  
+
 To keep the project scope manageable for the class timeline, the first implementation will support:
 
 - 8-bit grayscale images
 - encoder only
 - lossless mode
-- regular mode only in the first version
+- regular mode only
 
-Run mode is intentionally left out of the initial implementation so that the team can focus on a correct, modular, and testable hardware architecture first. If time permits, run mode may be added later as an extension.
+Run mode is intentionally excluded from the initial implementation due to its higher hardware complexity. This allows the team to focus on building a correct, modular, and verifiable hardware architecture.
 
 ### 2. Why this IP is a good hardware project
 
