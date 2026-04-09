@@ -19,7 +19,7 @@
 
 ### 1. What the IP does
 
-This project designs a custom Vitis HLS IP block for **lossless grayscale image compression using the regular-mode path of JPEG-LS**.
+This project designs a custom FPGA IP block for **lossless grayscale image compression based on the regular-mode path of JPEG-LS**.
 
 The IP takes an input grayscale image and produces a compressed output bitstream.  
 To keep the project scope manageable for the class timeline, the first implementation will support:
