@@ -274,6 +274,6 @@ If the base design is completed early, the team may explore one or more of the f
 
 ## Summary
 
-We propose a custom Vitis HLS IP for grayscale lossless image compression using the regular-mode path of JPEG-LS.  
+We propose a custom FPGA IP for grayscale lossless image compression using the regular-mode path of JPEG-LS.  
 The project is intentionally scoped to a modular, testable encoder-only design with AXI-based PS/IP integration.  
 The design focuses on local prediction, context modeling, adaptive entropy coding, and efficient bit packing, all of which are good candidates for FPGA acceleration.
