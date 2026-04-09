@@ -1,4 +1,4 @@
-# FPGA-Based JPEG-LS Regular-Mode Encoder in Vitis HLS
+# FPGA-Based JPEG-LS Regular-Mode Encoder
 
 ## a. GitHub Repo
 
