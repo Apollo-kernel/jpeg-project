@@ -56,9 +56,7 @@ The project also fits the class requirements well because it has:
 
 #### Outputs
 - compressed bitstream or packed encoded words
-- output byte count
 - done status
-- optional debug counters and performance counters
 
 ### 4. Mathematical operations performed in the IP
 
