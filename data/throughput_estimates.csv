@@ -1,0 +1,7 @@
+metric,source,cycles_per_unit,throughput_at_100mhz,throughput_at_hls_estimated_116_82mhz,notes
+bit_write_unary_loop,write_unary_hls PipelineII=1,1 coding bit per cycle while emitting unary bits,100.00 Mbit/s,116.82 Mbit/s,Local loop throughput only; end-to-end image throughput is limited by the data-dependent pixel loop.
+bit_write_remainder_loop,write_bits_hls PipelineII=1,1 coding bit per cycle while emitting remainder bits,100.00 Mbit/s,116.82 Mbit/s,Local loop throughput only; end-to-end image throughput is limited by the data-dependent pixel loop.
+row_buffer_init_and_copy,reported pipeline loops with II=1,1 pixel per cycle for those loops,100.00 Mpixel/s,116.82 Mpixel/s,Local row-buffer loop throughput; not the complete encoder throughput.
+main_entropy_coded_pixel_loop_best,inner pixel-loop iteration latency minimum,25 cycles per pixel,4.000 Mpixel/s,4.673 Mpixel/s,Best reported HLS schedule point from csynth loop table.
+main_entropy_coded_pixel_loop_worst,inner pixel-loop iteration latency maximum,591 cycles per pixel,0.169 Mpixel/s,0.198 Mpixel/s,Conservative reported HLS schedule point; variable-length Golomb coding makes latency data-dependent.
+end_to_end_input_pixel_throughput_envelope,computed from 25-591 cycles per pixel at target/estimated clocks,25-591 cycles per pixel,0.169-4.000 Mpixel/s,0.198-4.673 Mpixel/s,Throughput envelope derived from HLS schedule, not a measured wall-clock benchmark.

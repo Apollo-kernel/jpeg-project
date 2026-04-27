@@ -1,0 +1,161 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Mon Apr 27 16:43:05 2026
+| Host         : ecs02.poly.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_utilization -file /home/yh6341/9463_04172026_1/hwdesign/labs/co48ajpeg/reports/vivado_utilization.rpt -hierarchical
+| Design       : jpegls_encode_hls
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------------------+---------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                           Instance                           |                             Module                            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------------------+---------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| jpegls_encode_hls                                            |                                                         (top) |       4898 |       4601 |       0 |  297 | 6066 |      4 |      5 |          3 |
+|   (jpegls_encode_hls)                                        |                                                         (top) |        283 |        283 |       0 |    0 | 1506 |      0 |      0 |          0 |
+|   control_s_axi_U                                            |                               jpegls_encode_hls_control_s_axi |        391 |        391 |       0 |    0 |  408 |      0 |      0 |          0 |
+|   ctx_A_U                                                    |                      jpegls_encode_hls_ctx_A_RAM_1P_BRAM_1R1W |         45 |         45 |       0 |    0 |    0 |      1 |      0 |          0 |
+|   ctx_B_U                                                    |                    jpegls_encode_hls_ctx_A_RAM_1P_BRAM_1R1W_0 |         36 |         36 |       0 |    0 |    0 |      1 |      0 |          0 |
+|   ctx_C_U                                                    |                    jpegls_encode_hls_ctx_A_RAM_1P_BRAM_1R1W_1 |        148 |        148 |       0 |    0 |    0 |      1 |      0 |          0 |
+|   ctx_N_U                                                    |                    jpegls_encode_hls_ctx_A_RAM_1P_BRAM_1R1W_2 |        358 |        358 |       0 |    0 |    0 |      1 |      0 |          0 |
+|   gmem0_m_axi_U                                              |                                 jpegls_encode_hls_gmem0_m_axi |        626 |        573 |       0 |   53 |  919 |      0 |      1 |          0 |
+|     bus_read                                                 |                            jpegls_encode_hls_gmem0_m_axi_read |        394 |        393 |       0 |    1 |  624 |      0 |      0 |          0 |
+|       fifo_burst                                             |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized2 |         18 |         17 |       0 |    1 |   13 |      0 |      0 |          0 |
+|         (fifo_burst)                                         |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized2 |         15 |         15 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem0_m_axi_srl__parameterized1 |          3 |          2 |       0 |    1 |    1 |      0 |      0 |          0 |
+|       fifo_rctl                                              |         jpegls_encode_hls_gmem0_m_axi_fifo__parameterized2_13 |          9 |          9 |       0 |    0 |    8 |      0 |      0 |          0 |
+|       rreq_burst_conv                                        |                 jpegls_encode_hls_gmem0_m_axi_burst_converter |        329 |        329 |       0 |    0 |  532 |      0 |      0 |          0 |
+|         (rreq_burst_conv)                                    |                 jpegls_encode_hls_gmem0_m_axi_burst_converter |        174 |        174 |       0 |    0 |  335 |      0 |      0 |          0 |
+|         rs_req                                               |                       jpegls_encode_hls_gmem0_m_axi_reg_slice |        156 |        156 |       0 |    0 |  197 |      0 |      0 |          0 |
+|       rs_rdata                                               |       jpegls_encode_hls_gmem0_m_axi_reg_slice__parameterized2 |         39 |         39 |       0 |    0 |   71 |      0 |      0 |          0 |
+|     bus_write                                                |                           jpegls_encode_hls_gmem0_m_axi_write |          2 |          2 |       0 |    0 |    3 |      0 |      0 |          0 |
+|       rs_resp                                                |       jpegls_encode_hls_gmem0_m_axi_reg_slice__parameterized1 |          2 |          2 |       0 |    0 |    3 |      0 |      0 |          0 |
+|     load_unit                                                |                            jpegls_encode_hls_gmem0_m_axi_load |        230 |        178 |       0 |   52 |  292 |      0 |      1 |          0 |
+|       (load_unit)                                            |                            jpegls_encode_hls_gmem0_m_axi_load |          4 |          4 |       0 |    0 |  134 |      0 |      0 |          0 |
+|       buff_rdata                                             |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized5 |         86 |         86 |       0 |    0 |   36 |      0 |      1 |          0 |
+|         (buff_rdata)                                         |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized5 |         35 |         35 |       0 |    0 |   28 |      0 |      0 |          0 |
+|         U_fifo_mem                                           |             jpegls_encode_hls_gmem0_m_axi_mem__parameterized0 |         52 |         52 |       0 |    0 |    8 |      0 |      1 |          0 |
+|       bus_wide_gen.rreq_offset                               |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized4 |         40 |         36 |       0 |    4 |   16 |      0 |      0 |          0 |
+|         (bus_wide_gen.rreq_offset)                           |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized4 |          6 |          6 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem0_m_axi_srl__parameterized3 |         35 |         31 |       0 |    4 |    4 |      0 |      0 |          0 |
+|       fifo_rreq                                              |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized0 |        100 |         52 |       0 |   48 |  106 |      0 |      0 |          0 |
+|         (fifo_rreq)                                          |            jpegls_encode_hls_gmem0_m_axi_fifo__parameterized0 |         11 |         11 |       0 |    0 |   10 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem0_m_axi_srl__parameterized0 |         90 |         42 |       0 |   48 |   96 |      0 |      0 |          0 |
+|   gmem1_m_axi_U                                              |                                 jpegls_encode_hls_gmem1_m_axi |        794 |        683 |       0 |  111 | 1143 |      0 |      1 |          0 |
+|     bus_read                                                 |                            jpegls_encode_hls_gmem1_m_axi_read |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|       rs_rdata                                               |       jpegls_encode_hls_gmem1_m_axi_reg_slice__parameterized2 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|     bus_write                                                |                           jpegls_encode_hls_gmem1_m_axi_write |        518 |        459 |       0 |   59 |  820 |      0 |      0 |          0 |
+|       (bus_write)                                            |                           jpegls_encode_hls_gmem1_m_axi_write |          6 |          6 |       0 |    0 |   46 |      0 |      0 |          0 |
+|       fifo_burst                                             |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized6 |         23 |         19 |       0 |    4 |   16 |      0 |      0 |          0 |
+|         (fifo_burst)                                         |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized6 |         11 |         11 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem1_m_axi_srl__parameterized4 |         13 |          9 |       0 |    4 |    4 |      0 |      0 |          0 |
+|       fifo_resp                                              |         jpegls_encode_hls_gmem1_m_axi_fifo__parameterized2_11 |         17 |         16 |       0 |    1 |   13 |      0 |      0 |          0 |
+|         (fifo_resp)                                          |         jpegls_encode_hls_gmem1_m_axi_fifo__parameterized2_11 |         14 |         14 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |          jpegls_encode_hls_gmem1_m_axi_srl__parameterized1_12 |          3 |          2 |       0 |    1 |    1 |      0 |      0 |          0 |
+|       rs_resp                                                |       jpegls_encode_hls_gmem1_m_axi_reg_slice__parameterized1 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|       wreq_burst_conv                                        |                 jpegls_encode_hls_gmem1_m_axi_burst_converter |        301 |        301 |       0 |    0 |  470 |      0 |      0 |          0 |
+|         (wreq_burst_conv)                                    |                 jpegls_encode_hls_gmem1_m_axi_burst_converter |        179 |        179 |       0 |    0 |  335 |      0 |      0 |          0 |
+|         rs_req                                               |                       jpegls_encode_hls_gmem1_m_axi_reg_slice |        122 |        122 |       0 |    0 |  135 |      0 |      0 |          0 |
+|       wreq_throttle                                          |                        jpegls_encode_hls_gmem1_m_axi_throttle |        168 |        114 |       0 |   54 |  270 |      0 |      0 |          0 |
+|         (wreq_throttle)                                      |                        jpegls_encode_hls_gmem1_m_axi_throttle |          1 |          1 |       0 |    0 |    6 |      0 |      0 |          0 |
+|         data_fifo                                            |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized8 |         45 |         25 |       0 |   20 |   49 |      0 |      0 |          0 |
+|           (data_fifo)                                        |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized8 |         16 |         16 |       0 |    0 |   12 |      0 |      0 |          0 |
+|           U_fifo_srl                                         |             jpegls_encode_hls_gmem1_m_axi_srl__parameterized6 |         30 |         10 |       0 |   20 |   37 |      0 |      0 |          0 |
+|         req_fifo                                             |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized7 |         50 |         16 |       0 |   34 |   78 |      0 |      0 |          0 |
+|           (req_fifo)                                         |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized7 |         14 |         14 |       0 |    0 |   12 |      0 |      0 |          0 |
+|           U_fifo_srl                                         |             jpegls_encode_hls_gmem1_m_axi_srl__parameterized5 |         36 |          2 |       0 |   34 |   66 |      0 |      0 |          0 |
+|         rs_req                                               |       jpegls_encode_hls_gmem1_m_axi_reg_slice__parameterized0 |         73 |         73 |       0 |    0 |  137 |      0 |      0 |          0 |
+|     load_unit                                                |                            jpegls_encode_hls_gmem1_m_axi_load |         20 |         20 |       0 |    0 |   15 |      0 |      0 |          0 |
+|       (load_unit)                                            |                            jpegls_encode_hls_gmem1_m_axi_load |          1 |          1 |       0 |    0 |    3 |      0 |      0 |          0 |
+|       buff_rdata                                             |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized5 |         19 |         19 |       0 |    0 |   12 |      0 |      0 |          0 |
+|     store_unit                                               |                           jpegls_encode_hls_gmem1_m_axi_store |        252 |        200 |       0 |   52 |  303 |      0 |      1 |          0 |
+|       (store_unit)                                           |                           jpegls_encode_hls_gmem1_m_axi_store |          4 |          4 |       0 |    0 |  137 |      0 |      0 |          0 |
+|       buff_wdata                                             |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized1 |         33 |         33 |       0 |    0 |   28 |      0 |      1 |          0 |
+|         (buff_wdata)                                         |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized1 |         23 |         23 |       0 |    0 |   22 |      0 |      0 |          0 |
+|         U_fifo_mem                                           |                             jpegls_encode_hls_gmem1_m_axi_mem |         10 |         10 |       0 |    0 |    6 |      0 |      1 |          0 |
+|       bus_wide_gen.wreq_offset                               |                            jpegls_encode_hls_gmem1_m_axi_fifo |         82 |         64 |       0 |   18 |   46 |      0 |      0 |          0 |
+|         (bus_wide_gen.wreq_offset)                           |                            jpegls_encode_hls_gmem1_m_axi_fifo |          9 |          9 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |                             jpegls_encode_hls_gmem1_m_axi_srl |         73 |         55 |       0 |   18 |   34 |      0 |      0 |          0 |
+|       fifo_wreq                                              |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized0 |        112 |         79 |       0 |   33 |   73 |      0 |      0 |          0 |
+|         (fifo_wreq)                                          |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized0 |         11 |         11 |       0 |    0 |    8 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem1_m_axi_srl__parameterized0 |        101 |         68 |       0 |   33 |   65 |      0 |      0 |          0 |
+|       fifo_wrsp                                              |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized2 |         18 |         17 |       0 |    1 |   13 |      0 |      0 |          0 |
+|         (fifo_wrsp)                                          |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized2 |          4 |          4 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem1_m_axi_srl__parameterized1 |         14 |         13 |       0 |    1 |    1 |      0 |      0 |          0 |
+|       user_resp                                              |            jpegls_encode_hls_gmem1_m_axi_fifo__parameterized3 |          6 |          6 |       0 |    0 |    6 |      0 |      0 |          0 |
+|   gmem2_m_axi_U                                              |                                 jpegls_encode_hls_gmem2_m_axi |        800 |        707 |       0 |   93 |  966 |      0 |      1 |          0 |
+|     bus_read                                                 |                            jpegls_encode_hls_gmem2_m_axi_read |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|       rs_rdata                                               |       jpegls_encode_hls_gmem2_m_axi_reg_slice__parameterized2 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|     bus_write                                                |                           jpegls_encode_hls_gmem2_m_axi_write |        510 |        451 |       0 |   59 |  774 |      0 |      0 |          0 |
+|       (bus_write)                                            |                           jpegls_encode_hls_gmem2_m_axi_write |          6 |          6 |       0 |    0 |   10 |      0 |      0 |          0 |
+|       fifo_burst                                             |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized4 |         24 |         20 |       0 |    4 |   16 |      0 |      0 |          0 |
+|         (fifo_burst)                                         |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized4 |         10 |         10 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem2_m_axi_srl__parameterized2 |         14 |         10 |       0 |    4 |    4 |      0 |      0 |          0 |
+|       fifo_resp                                              |          jpegls_encode_hls_gmem2_m_axi_fifo__parameterized1_9 |         17 |         16 |       0 |    1 |   13 |      0 |      0 |          0 |
+|         (fifo_resp)                                          |          jpegls_encode_hls_gmem2_m_axi_fifo__parameterized1_9 |         13 |         13 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |          jpegls_encode_hls_gmem2_m_axi_srl__parameterized0_10 |          4 |          3 |       0 |    1 |    1 |      0 |      0 |          0 |
+|       rs_resp                                                |       jpegls_encode_hls_gmem2_m_axi_reg_slice__parameterized1 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|       wreq_burst_conv                                        |                 jpegls_encode_hls_gmem2_m_axi_burst_converter |        289 |        289 |       0 |    0 |  460 |      0 |      0 |          0 |
+|         (wreq_burst_conv)                                    |                 jpegls_encode_hls_gmem2_m_axi_burst_converter |        176 |        176 |       0 |    0 |  327 |      0 |      0 |          0 |
+|         rs_req                                               |                       jpegls_encode_hls_gmem2_m_axi_reg_slice |        113 |        113 |       0 |    0 |  133 |      0 |      0 |          0 |
+|       wreq_throttle                                          |                        jpegls_encode_hls_gmem2_m_axi_throttle |        170 |        116 |       0 |   54 |  270 |      0 |      0 |          0 |
+|         (wreq_throttle)                                      |                        jpegls_encode_hls_gmem2_m_axi_throttle |          1 |          1 |       0 |    0 |    6 |      0 |      0 |          0 |
+|         data_fifo                                            |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized6 |         47 |         27 |       0 |   20 |   49 |      0 |      0 |          0 |
+|           (data_fifo)                                        |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized6 |         17 |         17 |       0 |    0 |   12 |      0 |      0 |          0 |
+|           U_fifo_srl                                         |             jpegls_encode_hls_gmem2_m_axi_srl__parameterized4 |         30 |         10 |       0 |   20 |   37 |      0 |      0 |          0 |
+|         req_fifo                                             |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized5 |         50 |         16 |       0 |   34 |   78 |      0 |      0 |          0 |
+|           (req_fifo)                                         |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized5 |         15 |         15 |       0 |    0 |   12 |      0 |      0 |          0 |
+|           U_fifo_srl                                         |             jpegls_encode_hls_gmem2_m_axi_srl__parameterized3 |         36 |          2 |       0 |   34 |   66 |      0 |      0 |          0 |
+|         rs_req                                               |       jpegls_encode_hls_gmem2_m_axi_reg_slice__parameterized0 |         73 |         73 |       0 |    0 |  137 |      0 |      0 |          0 |
+|     load_unit                                                |                            jpegls_encode_hls_gmem2_m_axi_load |         17 |         17 |       0 |    0 |   12 |      0 |      0 |          0 |
+|       buff_rdata                                             |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized3 |         17 |         17 |       0 |    0 |   12 |      0 |      0 |          0 |
+|     store_unit                                               |                           jpegls_encode_hls_gmem2_m_axi_store |        269 |        235 |       0 |   34 |  175 |      0 |      1 |          0 |
+|       (store_unit)                                           |                           jpegls_encode_hls_gmem2_m_axi_store |          1 |          1 |       0 |    0 |   65 |      0 |      0 |          0 |
+|       buff_wdata                                             |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized0 |         32 |         32 |       0 |    0 |   20 |      0 |      1 |          0 |
+|         (buff_wdata)                                         |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized0 |         12 |         12 |       0 |    0 |   16 |      0 |      0 |          0 |
+|         U_fifo_mem                                           |                             jpegls_encode_hls_gmem2_m_axi_mem |         20 |         20 |       0 |    0 |    4 |      0 |      1 |          0 |
+|       fifo_wreq                                              |                            jpegls_encode_hls_gmem2_m_axi_fifo |        106 |         73 |       0 |   33 |   71 |      0 |      0 |          0 |
+|         (fifo_wreq)                                          |                            jpegls_encode_hls_gmem2_m_axi_fifo |         70 |         70 |       0 |    0 |    8 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |                             jpegls_encode_hls_gmem2_m_axi_srl |         38 |          5 |       0 |   33 |   63 |      0 |      0 |          0 |
+|       fifo_wrsp                                              |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized1 |         19 |         18 |       0 |    1 |   13 |      0 |      0 |          0 |
+|         (fifo_wrsp)                                          |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized1 |          5 |          5 |       0 |    0 |   12 |      0 |      0 |          0 |
+|         U_fifo_srl                                           |             jpegls_encode_hls_gmem2_m_axi_srl__parameterized0 |         14 |         13 |       0 |    1 |    1 |      0 |      0 |          0 |
+|       user_resp                                              |            jpegls_encode_hls_gmem2_m_axi_fifo__parameterized2 |        113 |        113 |       0 |    0 |    6 |      0 |      0 |          0 |
+|   grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1_fu_579     | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1 |         28 |         28 |       0 |    0 |   14 |      0 |      0 |          0 |
+|     (grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1_fu_579) | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1 |          0 |          0 |       0 |    0 |   12 |      0 |      0 |          0 |
+|     flow_control_loop_pipe_sequential_init_U                 |    jpegls_encode_hls_flow_control_loop_pipe_sequential_init_8 |         28 |         28 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2_fu_585     | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2 |         57 |         57 |       0 |    0 |   12 |      0 |      0 |          0 |
+|     (grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2_fu_585) | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2 |          0 |          0 |       0 |    0 |   10 |      0 |      0 |          0 |
+|     flow_control_loop_pipe_sequential_init_U                 |    jpegls_encode_hls_flow_control_loop_pipe_sequential_init_7 |         57 |         57 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5_fu_593     | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5 |         69 |         69 |       0 |    0 |   26 |      0 |      0 |          0 |
+|     (grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5_fu_593) | jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5 |         23 |         23 |       0 |    0 |   24 |      0 |      0 |          0 |
+|     flow_control_loop_pipe_sequential_init_U                 |    jpegls_encode_hls_flow_control_loop_pipe_sequential_init_6 |         46 |         46 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1_fu_600      |  jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1 |        171 |        171 |       0 |    0 |   67 |      0 |      0 |          0 |
+|     (grp_jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1_fu_600)  |  jpegls_encode_hls_jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1 |         49 |         49 |       0 |    0 |   65 |      0 |      0 |          0 |
+|     flow_control_loop_pipe_sequential_init_U                 |    jpegls_encode_hls_flow_control_loop_pipe_sequential_init_5 |        122 |        122 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   grp_write_bits_hls_fu_621                                  |                              jpegls_encode_hls_write_bits_hls |        298 |        278 |       0 |   20 |  292 |      0 |      0 |          0 |
+|     (grp_write_bits_hls_fu_621)                              |                              jpegls_encode_hls_write_bits_hls |        180 |        160 |       0 |   20 |  290 |      0 |      0 |          0 |
+|     flow_control_loop_pipe_sequential_init_U                 |    jpegls_encode_hls_flow_control_loop_pipe_sequential_init_4 |        119 |        119 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   grp_write_unary_hls_fu_607                                 |                             jpegls_encode_hls_write_unary_hls |        751 |        731 |       0 |   20 |  696 |      0 |      0 |          0 |
+|     (grp_write_unary_hls_fu_607)                             |                             jpegls_encode_hls_write_unary_hls |        237 |        237 |       0 |    0 |  389 |      0 |      0 |          0 |
+|     grp_write_unary_hls_Pipeline_VITIS_LOOP_160_1_fu_224     |   jpegls_encode_hls_write_unary_hls_Pipeline_VITIS_LOOP_160_1 |        515 |        495 |       0 |   20 |  307 |      0 |      0 |          0 |
+|       (grp_write_unary_hls_Pipeline_VITIS_LOOP_160_1_fu_224) |   jpegls_encode_hls_write_unary_hls_Pipeline_VITIS_LOOP_160_1 |        417 |        397 |       0 |   20 |  305 |      0 |      0 |          0 |
+|       flow_control_loop_pipe_sequential_init_U               |      jpegls_encode_hls_flow_control_loop_pipe_sequential_init |        100 |        100 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   line_cur_U                                                 |                  jpegls_encode_hls_line_prev_RAM_1P_BRAM_1R1W |         16 |         16 |       0 |    0 |    0 |      0 |      1 |          0 |
+|   line_prev_U                                                |                jpegls_encode_hls_line_prev_RAM_1P_BRAM_1R1W_3 |         22 |         22 |       0 |    0 |    0 |      0 |      1 |          0 |
+|   mul_32s_32s_32_2_1_U46                                     |                          jpegls_encode_hls_mul_32s_32s_32_2_1 |         15 |         15 |       0 |    0 |   17 |      0 |      0 |          3 |
++--------------------------------------------------------------+---------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

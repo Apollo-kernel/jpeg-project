@@ -1,0 +1,8 @@
+goal_or_metric,target_or_requirement,evidence,result,status,notes
+HLS target clock,10.00 ns / 100 MHz,reports/jpegls_encode_hls_csynth.rpt,estimated clock 8.560 ns / estimated Fmax 116.82 MHz,PASS,Estimated clock is 1.440 ns faster than target.
+Vivado OOC post-route timing,meet 10.00 ns clock constraint,reports/vivado_timing.rpt,WNS 1.094 ns / TNS 0.000 ns / 0 failing endpoints,PASS,Approximate post-route critical path from slack is 8.906 ns or about 112.3 MHz.
+HLS top-level latency visibility,report synthesis latency and explain variable bound,reports/jpegls_encode_hls_csynth.rpt,15 to 2483040295 cycles; 0.150 us to 24.830 sec,PASS,Large static max is a data-dependent upper bound for variable image size and variable-length coding, not a timing violation.
+Throughput reporting,provide explicit throughput table,README.md and data/throughput_estimates.csv,0.169-4.000 Mpixel/s at 100 MHz schedule envelope,PASS,Derived from HLS inner pixel-loop iteration latency range of 25-591 cycles/pixel.
+RTL verification scope,provide C/RTL co-sim PASS evidence,reports/cosim_pass_excerpt.txt and data/hls_cosim_small_results.csv,6/6 small synthetic tests PASS,PASS,Small mode is used to keep RTL simulation practical.
+Real-image functional verification,verify required real images,data/hls_csim_results.csv,two_macaws and whitewater_rafting PASS in HLS C simulation,PASS,Real images are not claimed as full-size C/RTL co-sim cases.
+Resource goal,keep usage modest on Zynq-7020,reports/jpegls_encode_hls_csynth.rpt and reports/vivado_utilization.rpt,HLS LUT 17%; post-route LUT 9.2%; DSP 3; BRAM18 equivalent 13,PASS,Leaves large resource margin for integration around the IP.

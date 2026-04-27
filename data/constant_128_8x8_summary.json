@@ -1,0 +1,15 @@
+{
+  "name": "constant_128_8x8",
+  "input_label": "/home/yh6341/9463_04172026_1/hwdesign/labs/jjppeeggllss/images/constant_128_8x8.png",
+  "height": 8,
+  "width": 8,
+  "input_bytes": 64,
+  "compressed_bytes": 39,
+  "valid_bits": 306,
+  "bits_per_pixel": 4.78125,
+  "compression_ratio_input_over_output": 1.641025641025641,
+  "lossless_decode_match": true,
+  "max_abs_diff": 0,
+  "regular_mode_only": true,
+  "grayscale_8bit_only": true
+}

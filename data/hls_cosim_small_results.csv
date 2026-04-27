@@ -1,0 +1,7 @@
+test_name,height,width,input_bytes,expected_compressed_bytes,expected_nbits,actual_nbits,result,reason
+all_zero_8x8,8,8,64,9,68,68,PASS,PASS
+constant_128_8x8,8,8,64,39,306,306,PASS,PASS
+horizontal_gradient_8x8,8,8,64,25,196,196,PASS,PASS
+vertical_gradient_8x8,8,8,64,29,225,225,PASS,PASS
+checkerboard_8x8,8,8,64,216,1721,1721,PASS,PASS
+random_8x8,8,8,64,371,2961,2961,PASS,PASS

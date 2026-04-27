@@ -1,0 +1,9 @@
+,PipelineII,PipelineDepth,TripCountMin,TripCountMax,LatencyMin,LatencyMax
+jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1:VITIS_LOOP_220_1,1,1,2048,2048,2048,2048
+jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2:VITIS_LOOP_227_2,1,1,729,729,729,729
+jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1:VITIS_LOOP_55_1,1,2,,,0,16
+write_unary_hls_Pipeline_VITIS_LOOP_160_1:VITIS_LOOP_160_1,1,8,,,0,517
+write_bits_hls:VITIS_LOOP_142_1,1,8,,,0,22
+jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5:VITIS_LOOP_277_5,1,2,,,1,2048
+jpegls_encode_hls:VITIS_LOOP_241_3,,31 ~ 1212421,,,31,2483038208
+jpegls_encode_hls:VITIS_LOOP_243_4,,25 ~ 591,,,25,1210368

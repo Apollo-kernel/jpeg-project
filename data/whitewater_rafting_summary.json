@@ -1,0 +1,15 @@
+{
+  "name": "whitewater_rafting",
+  "input_label": "/home/yh6341/9463_04172026_1/hwdesign/labs/jjppeeggllss/images/whitewater rafting.png",
+  "height": 512,
+  "width": 768,
+  "input_bytes": 393216,
+  "compressed_bytes": 244120,
+  "valid_bits": 1952957,
+  "bits_per_pixel": 4.966626485188802,
+  "compression_ratio_input_over_output": 1.6107488120596427,
+  "lossless_decode_match": true,
+  "max_abs_diff": 0,
+  "regular_mode_only": true,
+  "grayscale_8bit_only": true
+}

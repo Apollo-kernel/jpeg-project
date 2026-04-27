@@ -1,0 +1,15 @@
+{
+  "name": "checkerboard_8x8",
+  "input_label": "/home/yh6341/9463_04172026_1/hwdesign/labs/jjppeeggllss/images/checkerboard_8x8.png",
+  "height": 8,
+  "width": 8,
+  "input_bytes": 64,
+  "compressed_bytes": 216,
+  "valid_bits": 1721,
+  "bits_per_pixel": 26.890625,
+  "compression_ratio_input_over_output": 0.2962962962962963,
+  "lossless_decode_match": true,
+  "max_abs_diff": 0,
+  "regular_mode_only": true,
+  "grayscale_8bit_only": true
+}

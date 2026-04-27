@@ -1,0 +1,15 @@
+{
+  "name": "all_zero_8x8",
+  "input_label": "/home/yh6341/9463_04172026_1/hwdesign/labs/jjppeeggllss/images/all_zero_8x8.png",
+  "height": 8,
+  "width": 8,
+  "input_bytes": 64,
+  "compressed_bytes": 9,
+  "valid_bits": 68,
+  "bits_per_pixel": 1.0625,
+  "compression_ratio_input_over_output": 7.111111111111111,
+  "lossless_decode_match": true,
+  "max_abs_diff": 0,
+  "regular_mode_only": true,
+  "grayscale_8bit_only": true
+}

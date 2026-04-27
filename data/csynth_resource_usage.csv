@@ -1,0 +1,11 @@
+Category,Name,BRAM_18K,DSP,FF,LUT,URAM
+module,jpegls_encode_hls_Pipeline_VITIS_LOOP_220_1,0,0,14,53,0
+module,jpegls_encode_hls_Pipeline_VITIS_LOOP_227_2,0,0,12,53,0
+module,jpegls_encode_hls_Pipeline_VITIS_LOOP_55_1,0,0,67,221,0
+module,write_unary_hls_Pipeline_VITIS_LOOP_160_1,0,0,595,651,0
+module,write_unary_hls,0,0,984,1421,0
+module,write_bits_hls,0,0,612,800,0
+module,jpegls_encode_hls_Pipeline_VITIS_LOOP_277_5,0,0,27,62,0
+module,jpegls_encode_hls,18,3,6619,9337,0
+top_total,jpegls_encode_hls,18,3,6619,9337,0
+available,xc7z020-clg484-1,280,220,106400,53200,0

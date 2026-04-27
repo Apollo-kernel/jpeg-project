@@ -1,0 +1,142 @@
+{
+  "project": "JPEG-LS regular-mode FPGA IP Python golden-reference notebook stage",
+  "python_implementation": {
+    "score": 10,
+    "max_score": 10,
+    "status": "PASS",
+    "synthetic_tests": 6,
+    "real_image_tests": 2,
+    "required_real_images": [
+      "images/two macaws.png",
+      "images/whitewater rafting.png"
+    ],
+    "missing_real_images": [],
+    "all_lossless_decode_match": true,
+    "results_csv": "data/python_results.csv"
+  },
+  "notes": [
+    "All Python implementation steps were executed inside this notebook.",
+    "Python is the golden reference model and vector generator.",
+    "The generated .mem, .json, .csv, .npz, and plot files are intended for later RTL/HLS verification.",
+    "This notebook implements 8-bit grayscale, lossless, regular-mode inspired JPEG-LS only."
+  ],
+  "tests": [
+    {
+      "test_name": "all_zero_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 9,
+      "valid_bits": 68,
+      "bits_per_pixel": 1.0625,
+      "compression_ratio": 7.111111111111111,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "constant_128_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 39,
+      "valid_bits": 306,
+      "bits_per_pixel": 4.78125,
+      "compression_ratio": 1.641025641025641,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "horizontal_gradient_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 25,
+      "valid_bits": 196,
+      "bits_per_pixel": 3.0625,
+      "compression_ratio": 2.56,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "vertical_gradient_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 29,
+      "valid_bits": 225,
+      "bits_per_pixel": 3.515625,
+      "compression_ratio": 2.206896551724138,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "checkerboard_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 216,
+      "valid_bits": 1721,
+      "bits_per_pixel": 26.890625,
+      "compression_ratio": 0.2962962962962963,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "random_8x8",
+      "height": 8,
+      "width": 8,
+      "input_bytes": 64,
+      "compressed_bytes": 371,
+      "valid_bits": 2961,
+      "bits_per_pixel": 46.265625,
+      "compression_ratio": 0.1725067385444744,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "two_macaws",
+      "height": 512,
+      "width": 768,
+      "input_bytes": 393216,
+      "compressed_bytes": 180903,
+      "valid_bits": 1447224,
+      "bits_per_pixel": 3.68048095703125,
+      "compression_ratio": 2.1736289613770916,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    },
+    {
+      "test_name": "whitewater_rafting",
+      "height": 512,
+      "width": 768,
+      "input_bytes": 393216,
+      "compressed_bytes": 244120,
+      "valid_bits": 1952957,
+      "bits_per_pixel": 4.966626485188802,
+      "compression_ratio": 1.6107488120596427,
+      "lossless_decode_match": true,
+      "max_abs_diff": 0,
+      "result": "PASS"
+    }
+  ],
+  "hls_implementation": {
+    "status": "PASS",
+    "csim_tests": 8,
+    "csim_all_pass": true,
+    "csim_results_csv": "data/hls_csim_results.csv",
+    "csynth_status": "PASS",
+    "target_device": "xc7z020-clg484-1",
+    "target_clock": "10.00 ns",
+    "estimated_clock": "8.560 ns",
+    "estimated_fmax": "116.82 MHz",
+    "synthesis_report": "reports/jpegls_encode_hls_csynth.rpt",
+    "resource_summary_csv": "data/hls_resource_summary.csv"
+  }
+}

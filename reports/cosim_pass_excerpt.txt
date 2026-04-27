@@ -1,0 +1,34 @@
+C/RTL co-simulation PASS excerpt from the original Vitis HLS 2023.2 batch log.
+The full generated HLS project/log is intentionally excluded from the clean grading repository.
+
+94: PASS all_zero_8x8
+95: PASS constant_128_8x8
+96: PASS horizontal_gradient_8x8
+97: PASS vertical_gradient_8x8
+98: PASS checkerboard_8x8
+99: PASS random_8x8
+100: All HLS C simulation tests PASS.
+378: INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+379: INFO: [COSIM 212-14] Instrumenting C test bench ...
+386: INFO: [COSIM 212-302] Starting C TB testing ... 
+388: PASS all_zero_8x8
+389: PASS constant_128_8x8
+390: PASS horizontal_gradient_8x8
+391: PASS vertical_gradient_8x8
+392: PASS checkerboard_8x8
+393: PASS random_8x8
+394: All HLS C simulation tests PASS.
+395: INFO: [COSIM 212-333] Generating C post check test bench ...
+396: INFO: [COSIM 212-12] Generating RTL test bench ...
+397: INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+398: INFO: [COSIM 212-323] Starting verilog simulation. 
+399: INFO: [COSIM 212-15] Starting XSIM ...
+631: INFO: [COSIM 212-316] Starting C post checking ...
+633: PASS all_zero_8x8
+634: PASS constant_128_8x8
+635: PASS horizontal_gradient_8x8
+636: PASS vertical_gradient_8x8
+637: PASS checkerboard_8x8
+638: PASS random_8x8
+639: All HLS C simulation tests PASS.
+640: INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,6 @@
+resource,used,available,utilization_percent
+BRAM_18K,18,280,6
+DSP,3,220,1
+FF,6619,106400,6
+LUT,9337,53200,17
+URAM,0,0,0

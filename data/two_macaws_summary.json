@@ -1,0 +1,15 @@
+{
+  "name": "two_macaws",
+  "input_label": "/home/yh6341/9463_04172026_1/hwdesign/labs/jjppeeggllss/images/two macaws.png",
+  "height": 512,
+  "width": 768,
+  "input_bytes": 393216,
+  "compressed_bytes": 180903,
+  "valid_bits": 1447224,
+  "bits_per_pixel": 3.68048095703125,
+  "compression_ratio_input_over_output": 2.1736289613770916,
+  "lossless_decode_match": true,
+  "max_abs_diff": 0,
+  "regular_mode_only": true,
+  "grayscale_8bit_only": true
+}
