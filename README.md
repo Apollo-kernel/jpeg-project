@@ -453,17 +453,6 @@ Key post-route results:
 - Split the bit packer into a dedicated streaming stage.
 - Replace the memory-mapped output buffer with an AXI4-Stream output interface if required by a larger system integration.
 
-## Final Submission Note Draft
-
-```text
-Repository URL: <your GitHub URL>
-
-Please start with README.md and docs/grader_checklist.md. This project implements a JPEG-LS regular-mode inspired 8-bit grayscale lossless encoder datapath, not a full JPEG-LS file-container encoder. The IP definition and AXI-style HLS interface are documented in docs/ip_role_definition.md. The architecture and module mapping are documented in docs/architecture.md. Verification evidence includes Python golden-model results, HLS C simulation results for 8/8 tests, Vitis HLS synthesis, PySilicon-style parsing of the HLS csynth.xml report, small C/RTL co-simulation PASS evidence for 6/6 synthetic tests, explicit latency/throughput/performance-vs-goal tables, a clean repository without bulky generated tool projects, and Vivado out-of-context post-route timing/utilization/power reports. The two real 512x768 images are verified by Python and HLS C simulation; they are not overstated as full-size C/RTL co-sim cases. Key post-route result: WNS = 1.094 ns, TNS = 0.000 ns, timing met.
-```
-
-
-
-
 ## C/RTL Co-simulation Status
 
 **Yes: this package includes real C/RTL co-simulation PASS evidence.** The relevant Vitis HLS 2023.2 PASS excerpt is committed in `reports/cosim_pass_excerpt.txt`, and the detailed explanation is in `docs/cosim_status.md`.
